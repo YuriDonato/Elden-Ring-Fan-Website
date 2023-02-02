@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
+}
+
+/*Fazer o scroll bonitinho*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*Pagina inicial*/
+.hero{
+    width: 100%;
+    height: 70vh;
+    background-image:linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 300px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 14px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color:transparent;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.first-background-video{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .first-background-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .first-background-video{
+        width: auto;
+        height: 100%;
+    }
+}
+/*Sessao Sobre*/
+.about{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.884),rgba(0, 0, 0, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre{
+    height: 80vh;
+    display: inline;
+}
+
+div #sobre.sobre h2{
+    font-size: 38px;
+    align-items: center;
+    padding: 5px;
+}
+
+div #sobre.sobre{
+
+    margin-bottom: 10%;
+}   
+
+div #trailer.trailer{
+        z-index: 0;    
+}
+
+p.about-bold{
+    font-weight: bold;
+}
+
+/*Sessao de midias*/
+.media{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.884),rgba(0, 0, 0, 0.3));
+        position: relative;
+        padding: 0 5%;
+        display: flex;
+        align-items: top;
+        padding-top: 30px;
+        justify-content: center;
+}
+
+/*Carousel*/
+
+.carousel{
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover{
+    background-color: #fff;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+
+/*Formulario e Sessao de Contato*/
+.contato{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.884),rgba(0, 0, 0, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+div #contato.contato{
+    padding-left: 65%;
+}
+
+div #contato.contato form{
+    padding-top: 10%;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+
+
+/*Paralax*/
+
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url(./images/eldenringresting.jpg);
+    background-position: top center;
+}
+
+section#img02{
+    background-image: url(https://th.bing.com/th/id/R.ec1bbe40260c6b97d03863912d39175a?rik=7TUhAyHAURkO4A&pid=ImgRaw&r=0);
+    background-position: top center;
+}
+
+section#img03{
+    background-image: url(./images/eldenringranni.jpg);
+    background-position: top center;
+}
+
+
+/*IMAGEM BOA DA MALENA
+section#img01{
+    background-image: url(https://i.redd.it/ljcz4p48yzl81.jpg);
+    background-position: top center;
+}*/

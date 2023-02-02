@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Fan-Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <section class="header">
+        <div class="hero">
+            <video autoplay loop muted plays-inline class="first-background-video">
+                <source src="./images/elden-ring-header-animated.webm" type="video/mp4">
+            </video>
+            <div class="nav">
+                <nav>
+                    <img src="./images/eldenring_new.webp" class="logo">
+                    <ul id="item-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="https://eldenring.wiki.fextralife.com/">Wiki</a></li>
+                        <li><a href="https://store.steampowered.com/app/1245620">Comprar</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#media">Midia</a></li>
+                        <li><a href="#contato">Contato</a></li>
+    
+                    </ul>
+                </nav>
+            </div id="home">
+            <div class="content">
+            <!--<h1>Jogue Agora</h1>-->
+                <a href="#about">Explorar</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="imagem" id="img01">
+        <div  id="about" class="about">
+            <div id="sobre" class="sobre">
+                <h2>A Ordem Dourada foi quebrada.</h2>
+                <p>
+                    Levante-se, Manchado, e seja guiado pela graça para brandir o poder do Anel Pristino e se tornar um Lorde Pristino nas Terras Intermediárias.
+                </p>
+                <br>
+                <p>
+                    Nas Terras Intermediárias, governadas pela Rainha Marika, a Eterna, o Anel Pristino, a fonte da Ternoarvore, foi destruído.
+                </p>
+                <br>
+                <p>
+                    A prole de Marika, todos semideuses, reivindicou os fragmentos do Anel Pristino conhecidos como Grandes Runas, e a 
+                    mácula louca de sua força recém-descoberta desencadeou uma guerra: A Fragmentacao. Uma guerra que significou o abandono 
+                    pela Vontade Maior.
+                </p>
+                <br>
+                <p>
+                    E agora a orientação da graça será trazida aos Manchados que foram desprezados pela graça do ouro e exilados das Terras 
+                    Intermediárias. Ó mortos que ainda vivem, sua graça há muito perdida, sigam o caminho para as Terras Entre além do mar 
+                    nebuloso para ficar diante do Anel Pristino.
+                </p>
+                <br>
+                <p class="about-bold">
+                    E se tornar o Lorde Pristino.
+                </p>
+            </div>
+            <div id="trailer" class="trailer">
+                <video autoplay loop muted width="600px" height="300px" src="https://static.bandainamcoent.eu/video/elden-ring-autoplay-launch-trailer.mp4"></video>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="imagem" id="img02">
+        <div  id="media" class="media">
+            <h2>Midia</h2>
+            <div class="carousel">
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+                    <input type="radio" name="slide" id="slide5">
+                
+                    <div class="slide s1">
+                        <img src="./images/carouselimg1.jpg">
+                    </div>
+                    <div class="slide s2">
+                        <img src="./images/carouselimg2.jpg">
+                    </div>
+                    <div class="slide s3">
+                        <img src="./images/carouselimg3.jpg">
+                    </div>
+                    <div class="slide s4">
+                        <img src="./images/carouselimg4.jpg">
+                    </div>
+                    <div class="slide s5">
+                        <img src="./images/carouselimg5.jpeg">
+                    </div>
+                </div>
+                <div class="navigation">
+                    <label class="bar" for="slide1"></label>
+                    <label class="bar" for="slide2"></label>
+                    <label class="bar" for="slide3"></label>
+                    <label class="bar" for="slide4"></label>
+                    <label class="bar" for="slide5"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="imagem" id="img03">
+        <div  id="contato" class="contato">
+            <div>
+                <h2>Contato</h2>
+                <form action="">
+                    <input type="text" placeholder="Seu nome" required>
+                        <input type="email" placeholder="Seu email" required>
+                        <input type="tel" placeholder="Seu telefone (opcional)">
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
