@@ -22,12 +22,10 @@ This project consists of a static web page that serves as a fanpage for the game
 
 - Carrossel de imagens para mostrar capturas de tela e arte conceitual do jogo.
 - Reprodução de vídeo embutida para trailers ou outras mídias relacionadas ao Elden Ring.
-- Banner ao vivo para destacar eventos, notícias ou promoções relacionadas ao jogo.
 - Formulário de contato para os usuários entrarem em contato com os administradores do site.
 
 - Image carousel to display screenshots and conceptual art of the game.
 - Embedded video playback for trailers or other Elden Ring-related media.
-- Live banner to highlight events, news, or promotions related to the game.
 - Contact form for users to get in touch with the site administrators.
 
 ## Como Usar / How to Use
